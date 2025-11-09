@@ -2,13 +2,16 @@
 Data Acquisition Repo for STAT 386
 
 ## Purpose
-This repository contains scripts and resources for obtaining and preprocessing data for a STAT 386 course project. The goal is to provide a structured approach to data acquisition, ensuring that all necessary datasets are collected and prepared for analysis.
+This repository contains scripts and resources for obtaining and preprocessing data for a STAT 386 course project. Its primary goal is to provide a structured and reproducible approach to data acquisition, ensuring that all relevant datasets are collected, cleaned, and prepared for analysis.
+
+The repository includes a Python script that scrapes comprehensive team statistics from Sports Reference, compiling them into a standardized format for further use in statistical modeling and analysis.
 
 ## Contents
 - `scraper.py`: A Python script that scrapes data from specified web sources and saves it in a structured format.
 - `requirements.txt`: A list of Python packages required to run the data acquisition scripts.
 - `README.md`: This file, providing an overview of the repository and its contents.
 - `data/`: A directory where the acquired data files are stored.
+- `{date}-team_stats.csv`: The csv file containing the team stats scraped from today's date.
 
 ## Usage
 To use the data acquisition scripts, follow these steps:
