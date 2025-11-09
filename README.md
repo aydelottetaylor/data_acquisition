@@ -1,5 +1,5 @@
 # data_acquisition
-Data Acquisition Repo for STAT 386
+Tools for collecting and preprocessing basketball team statistics from Sports Reference for STAT 386.
 
 ## Purpose
 This repository contains scripts and resources for obtaining and preprocessing data for a STAT 386 course project. Its primary goal is to provide a structured and reproducible approach to data acquisition, ensuring that all relevant datasets are collected, cleaned, and prepared for analysis.
@@ -7,11 +7,11 @@ This repository contains scripts and resources for obtaining and preprocessing d
 The repository includes a Python script that scrapes comprehensive team statistics from Sports Reference, compiling them into a standardized format for further use in statistical modeling and analysis.
 
 ## Contents
-- `scraper.py`: A Python script that scrapes data from specified web sources and saves it in a structured format.
+- `scraper.py`: A Python script that scrapes basketball team data from Sports Reference and saves it in a .csv.
 - `requirements.txt`: A list of Python packages required to run the data acquisition scripts.
 - `README.md`: This file, providing an overview of the repository and its contents.
 - `data/`: A directory where the acquired data files are stored.
-- `{date}-team_stats.csv`: The csv file containing the team stats scraped from today's date.
+- `data/{date}-team_stats.csv`: A csv file containing the team stats scraped from today's date.
 
 ## Usage
 To use the data acquisition scripts, follow these steps:
@@ -27,6 +27,7 @@ To use the data acquisition scripts, follow these steps:
 4. The acquired data will be saved in the `data/` directory.
 
 ## Data Included In Final CSV  
+The final CSV file includes the following columns representing advanced and traditional team statistics:
 - team_name
 - opponent_pace
 - opponent_offensive_rating
@@ -111,3 +112,28 @@ To use the data acquisition scripts, follow these steps:
 - defensive_rating_adjusted
 - net_rating_adjusted
 - date
+
+---
+
+## License
+This project is licensed under the MIT License.
+
+Copyright (c) 2025 Taylor Aydelotte
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
